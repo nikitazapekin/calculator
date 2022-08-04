@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="response.css">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <form class="calculator" name="calc">
+        <input type="text" class="value" readonly name="txt"> <!-- readonly каб низя было писать -->
+
+    <span class="num clear" onclick="calc.txt.value=''">
+        <i>C</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='/'">
+        <i>/</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='*'">
+        <i>*</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='7'">
+        <i>7</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='8'">
+        <i>8</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='9'">
+        <i>9</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='-'">
+        <i>-</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='4'">
+        <i>4</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='5'">
+        <i>5</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='6'">
+        <i>6</i>
+    </span>
+    <span class="num plus" onclick="calc.txt.value+='+'">
+        <i>+</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='1'">
+        <i>1</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='2'">
+        <i>2</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='3'">
+        <i>3</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='0'">
+        <i>0</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='00'">
+        <i>00</i>
+    </span>
+    <span class="num" onclick="calc.txt.value+='.'">
+        <i>.</i>
+    </span>
+    <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+    </form>
+</div>
+
+
+
+<div class="post">
+    <div class="hrt"></div>
+    <div class="inst"></div>
+    <p class="likes"></p>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/f1bdaa8fe8.js" crossorigin="anonymous"></script>
+<script src="game.js">
+
+</script>
+
+</body>
+</html>
